@@ -1,0 +1,7 @@
+程序为get_benign_wordsdic
+
+处理流程：
+
+先从file_data数据源中取出对应的html文件进行解析，然后在file_url（同样是由数据源处理得到）的基础上生成新的dataframe文件保存到benign.csv中。
+
+利用正则表达式与jiaba分词工具进行分词并产生词表benign_word.txt。其中停用词采用哈工大的停用词表hit_stopwords.txt

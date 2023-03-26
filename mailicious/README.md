@@ -1,0 +1,7 @@
+这个文件夹存放的是从url_content中经过分类后恶意网页数据，是由其中的total_category.csv处理得来。
+
+处理流程：
+
+先将total_category.csv文件按照type进行分类产生四个对应文件夹中的pre_cut_xxx.csv文件。
+
+然后采用正则表达式提取相关文本，使用jieba工具进行分词，停用词表为哈工大的hit_stopwords.txt，最后进行词频统计得到对应文件夹中的xxx_word.txt文件。
